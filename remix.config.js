@@ -1,5 +1,5 @@
 // TODO: import Images type
-/** @type {import('@remix-run/dev').AppConfig & {images: { sizes: number[]; domains: string[]; minimumCacheTTL?: number; formats?: Array<'image/avif' | 'image/webp'>; dangerouslyAllowSVG?: boolean; contentSecurityPolicy?: string; }}} */
+/** @type {import('@remix-run/dev').AppConfig & {images: { domains: string[]; remotePatterns?: {protocol?: 'http' | 'https';hostname: string;port?: string;pathname?: string;}[]; sizes: number[]; minimumCacheTTL?: number; formats?: Array<'image/avif' | 'image/webp'>; dangerouslyAllowSVG?: boolean; contentSecurityPolicy?: string; }}} */
 module.exports = {
   serverBuildTarget: "vercel",
   // When running locally in development mode, we use the built in remix
