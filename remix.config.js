@@ -1,5 +1,4 @@
-// TODO: import Images type
-/** @type {import('@remix-run/dev').AppConfig & {vercel:{images: { domains: string[]; remotePatterns?: {protocol?: 'http' | 'https';hostname: string;port?: string;pathname?: string;}[]; sizes: number[]; minimumCacheTTL?: number; formats?: Array<'image/avif' | 'image/webp'>; dangerouslyAllowSVG?: boolean; contentSecurityPolicy?: string; }}}} */
+/** @type {import('@remix-run/dev').AppConfig & {vercel:{images: import('@vercel/build-utils').Images}}} */
 module.exports = {
   serverBuildTarget: "vercel",
   // When running locally in development mode, we use the built in remix
